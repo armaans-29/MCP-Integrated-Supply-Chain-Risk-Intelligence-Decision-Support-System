@@ -1,4 +1,4 @@
-# MCP-Integrated Supply Chain Risk Intelligence & Decision Support System
+# MCP Powered Supply Chain Risk Intelligence & Decision Support System
 
 <p align="center">
   <strong>From fragmented supply chain data to informed operational decisions.</strong>
