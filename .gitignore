@@ -1,6 +1,22 @@
+# Environment secrets
 .env
+.env.*
+!.env.example
 service_account.json
+
+# Database and logs
 data/*.db
+data/*.db-*
 logs/*.log
+
+# Python cache
 __pycache__/
+*.py[cod]
 .pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+
+# IDE
+.vscode/
