@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS suppliers (id INTEGER PRIMARY KEY, name TEXT NOT NULL, country TEXT, category TEXT, contact_name TEXT, payment_terms TEXT, default_lead_time_days INTEGER, status TEXT DEFAULT 'active');
+CREATE TABLE IF NOT EXISTS materials (id INTEGER PRIMARY KEY, sku TEXT UNIQUE NOT NULL, name TEXT NOT NULL, category TEXT, unit TEXT, unit_cost REAL, safety_stock REAL, reorder_level REAL, primary_supplier_id INTEGER, is_critical INTEGER DEFAULT 0);
+CREATE TABLE IF NOT EXISTS inventory (material_id INTEGER PRIMARY KEY, on_hand REAL, allocated REAL DEFAULT 0, location TEXT, last_counted_qty REAL, last_counted_at TEXT, updated_at TEXT);
+CREATE TABLE IF NOT EXISTS supplier_quotes (id INTEGER PRIMARY KEY, material_id INTEGER, supplier_id INTEGER, unit_price REAL, lead_time_days INTEGER, moq REAL, valid_until TEXT);
+CREATE TABLE IF NOT EXISTS purchase_orders (id INTEGER PRIMARY KEY, po_number TEXT UNIQUE, supplier_id INTEGER, order_date TEXT, promised_date TEXT, received_date TEXT, status TEXT, currency TEXT DEFAULT 'USD');
+CREATE TABLE IF NOT EXISTS purchase_order_items (id INTEGER PRIMARY KEY, po_id INTEGER, material_id INTEGER, qty_ordered REAL, qty_received REAL DEFAULT 0, unit_price REAL, std_price REAL);
+CREATE TABLE IF NOT EXISTS shipments (id INTEGER PRIMARY KEY, po_id INTEGER, carrier TEXT, tracking_number TEXT, origin TEXT, destination TEXT, status TEXT, eta_original TEXT, eta_current TEXT, actual_delivery TEXT, last_event TEXT, last_event_at TEXT, current_location TEXT, lat REAL, lon REAL);
+CREATE TABLE IF NOT EXISTS production_orders (id INTEGER PRIMARY KEY, order_number TEXT, product_name TEXT, qty REAL, due_date TEXT, status TEXT, order_value REAL, completed_date TEXT);
+CREATE TABLE IF NOT EXISTS production_bom (id INTEGER PRIMARY KEY, production_order_id INTEGER, material_id INTEGER, qty_required REAL);
+CREATE TABLE IF NOT EXISTS inventory_movements (id INTEGER PRIMARY KEY, material_id INTEGER, movement_date TEXT, type TEXT, quantity REAL, reference TEXT);
+CREATE TABLE IF NOT EXISTS risk_alerts (id INTEGER PRIMARY KEY, severity TEXT, category TEXT, title TEXT, explanation TEXT, affected TEXT, evidence TEXT, recommendation TEXT, status TEXT DEFAULT 'open', source TEXT, created_at TEXT, updated_at TEXT);
+CREATE TABLE IF NOT EXISTS ai_investigations (id INTEGER PRIMARY KEY, query TEXT, intent TEXT, tools_used TEXT, answer TEXT, created_at TEXT);
+CREATE TABLE IF NOT EXISTS recommendations (id INTEGER PRIMARY KEY, investigation_id INTEGER, text TEXT, status TEXT DEFAULT 'proposed', created_at TEXT);
+CREATE TABLE IF NOT EXISTS integration_status (service TEXT PRIMARY KEY, mode TEXT, status TEXT, detail TEXT, checked_at TEXT);
+CREATE TABLE IF NOT EXISTS action_history (id INTEGER PRIMARY KEY, actor TEXT, role TEXT, action TEXT, target TEXT, payload TEXT, status TEXT, result TEXT, approved_by TEXT, approved_role TEXT, created_at TEXT, updated_at TEXT);
+CREATE INDEX IF NOT EXISTS idx_mov_mat_date ON inventory_movements (material_id, movement_date);
+CREATE INDEX IF NOT EXISTS idx_poi_po ON purchase_order_items (po_id);
