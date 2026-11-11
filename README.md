@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="docs/images/banner.svg" alt="SupplyChain Sentinel AI: MCP-powered supply chain control tower" width="100%">
+MCP Powered Supply Chain Critical Decision Support System
 
 <br>
 
 **An agent that reads your supply chain, finds trouble early, and asks before it acts.**
 
-<br>
+
 
 ![Python](https://img.shields.io/badge/PYTHON-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![MCP](https://img.shields.io/badge/MCP-STREAMABLE%20HTTP-6E56CF?style=for-the-badge)
