@@ -1,0 +1,15 @@
+services:
+  sentinel:
+    build: .
+    ports: ["8501:8501"]
+    env_file: [.env]
+    volumes:
+      - ./data:/app/data
+      - ./service_account.json:/app/service_account.json:ro   # only needed for Google Sheets
+  api:            # optional read-only REST API:  docker compose --profile api up
+    build: .
+    profiles: ["api"]
+    command: uvicorn sentinel.api:app --host 0.0.0.0 --port 8000
+    ports: ["8000:8000"]
+    env_file: [.env]
+    volumes: ["./data:/app/data"]
