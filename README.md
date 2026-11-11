@@ -94,28 +94,42 @@ Every investigation resolves into these five. Facts, estimates and recommendatio
 
 ## 🖼️ Product tour
 
+
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <img src="docs/images/overview.png" alt="Executive Control Tower with stock cover chart, operational health gauge and priority alerts" width="100%"><br>
-      <sub><b>Control Tower</b> · what needs attention first</sub>
+    <th width="50%">🏠 Control Tower</th>
+    <th width="50%">🤖 AI Investigation Centre</th>
+  </tr>
+  <tr>
+    <td valign="top">
+      An executive overview of supply-chain operations, highlighting operational health, priority alerts, and areas requiring attention.
+      <br><br>
+      <b>Focus:</b> What needs attention first?
     </td>
-    <td width="50%" valign="top">
-      <img src="docs/images/agent.png" alt="AI Investigation Centre with investigation steps, source list and an approval prompt" width="100%"><br>
-      <sub><b>AI Investigation Centre</b> · ask, inspect the evidence, approve</sub>
+    <td valign="top">
+      An AI-assisted investigation workspace for asking questions, examining available evidence, and reviewing recommended actions.
+      <br><br>
+      <b>Focus:</b> Ask, investigate, and decide.
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <img src="docs/images/inventory.png" alt="Inventory Intelligence table with days of cover, reorder point and stock-out risk" width="100%"><br>
-      <sub><b>Inventory</b> · how long stock lasts versus when help arrives</sub>
+    <th>📦 Inventory Intelligence</th>
+    <th>🔌 Integrations</th>
+  </tr>
+  <tr>
+    <td valign="top">
+      Monitor stock levels, inventory coverage, reorder requirements, and potential stock-out risks.
+      <br><br>
+      <b>Focus:</b> How much stock is available, and when is replenishment needed?
     </td>
-    <td width="50%" valign="top">
-      <img src="docs/images/integrations.png" alt="Integrations page showing live, demo and disconnected status for each MCP server" width="100%"><br>
-      <sub><b>Integrations</b> · the real status of every service</sub>
+    <td valign="top">
+      View connected services, MCP integrations, and their reported connection status.
+      <br><br>
+      <b>Focus:</b> Which services are connected and available?
     </td>
   </tr>
 </table>
+
 
 <br>
 
@@ -258,17 +272,28 @@ Things worth trying in the **🤖 AI Agent** page:
 
 <br>
 
-<img src="docs/images/divider.svg" alt="" width="100%">
 
-## 🌍 Data & live-ness
+## 🌍 Data & live intelligence
 
-<div align="center">
-  <img src="docs/images/modes.svg" alt="Three modes: live means a real service answered, demo means flagged sample data with writes off, disconnected means no credentials or service down" width="100%">
-</div>
+**One platform. Multiple data sources. Complete visibility into data reliability.**
 
-<br>
+Sentinel brings operational records and external intelligence together while keeping the distinction between live information and simulated environments clear.
 
-Each source reports its own mode.
+| 🟢 LIVE | 🟡 DEMO | 🔴 DISCONNECTED |
+|:---:|:---:|:---:|
+| **Connected & Responding** | **Simulated & Identified** | **Unavailable** |
+| Real service response | Controlled sample environment | No successful connection |
+
+**From Data to Decisions**
+
+**COLLECT** → **CONNECT** → **VALIDATE** → **ANALYSE** → **ACT**
+
+*Every insight begins with understanding where the data comes from and whether its source is available.*
+
+
+### 🔌 Understanding the Integration Ecosystem
+
+Each source contributes a different layer of operational intelligence, with its own connection status and data behaviour.
 
 | Source | What it provides | Status | How it behaves |
 |:--|:--|:--:|:--|
