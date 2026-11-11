@@ -1,11 +1,8 @@
 <div align="center">
 
-MCP Powered Supply Chain Critical Decision Support System
-
-<br>
+# MCP Powered Supply Chain Critical Decision Support System
 
 **An agent that reads your supply chain, finds trouble early, and asks before it acts.**
-
 
 
 ![Python](https://img.shields.io/badge/PYTHON-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -14,25 +11,22 @@ MCP Powered Supply Chain Critical Decision Support System
 ![Streamlit](https://img.shields.io/badge/STREAMLIT-UI-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Tests](https://img.shields.io/badge/TESTS-PYTEST-2EA44F?style=for-the-badge&logo=pytest&logoColor=white)
 
-<br>
 
 [![Launch the live demo](https://img.shields.io/badge/▶%20%20LAUNCH%20THE%20LIVE%20DEMO-38bdf8?style=for-the-badge&labelColor=0b1220)](https://mcp-supply-chain-real-time-risk-idea.streamlit.app/)
 
-<br>
 
-<img src="docs/images/divider.svg" alt="" width="100%">
+##  Pick the path
+
+
+| **Skimming** | **Engineering** | **Operations** |
+|:---|:---|:---|
+| [The Pitch](#-the-pitch) | [Under the Hood](#-under-the-hood) | [The Problem](#-the-problem-in-one-afternoon) |
+| [Five Questions](#-five-questions-one-answer) | [Architecture](#-architecture) | [Five Questions](#-five-questions-one-answer) |
+| [Product Tour](#-product-tour) | [How an Investigation Runs](#-how-an-investigation-runs) | [Data & Live-ness](#-data--live-ness) |
+| [Quick Start](#-quick-start) | [Tests](#-tests) | [Product Tour](#-product-tour) |
+
 
 </div>
-
-## 🧭 Pick your path
-
-| 👀 **Just skimming** | 🛠️ **I care about the engineering** | 📦 **I run operations** |
-|:---|:---|:---|
-| [The pitch](#-the-pitch) | [Under the hood](#-under-the-hood) | [The problem](#-the-problem-in-one-afternoon) |
-| [Five questions](#-five-questions-one-answer) | [Architecture](#-architecture) | [Five questions](#-five-questions-one-answer) |
-| [Product tour](#-product-tour) | [How an investigation runs](#-how-an-investigation-runs) | [Data & live-ness](#-data--live-ness) |
-| [Quick start](#-quick-start) | [Tests](#-tests) | [Product tour](#-product-tour) |
-
 <br>
 
 ## ✨ The pitch
@@ -43,7 +37,7 @@ It is not a chatbot bolted onto a dashboard. The dashboard and the agent share o
 
 <br>
 
-## 🌧️ The problem, in one afternoon
+## 🌧️ The problem, in one noon
 
 A supplier e-mail lands: *the resin shipment is running late.*
 
@@ -73,9 +67,24 @@ sentinel ▸ Checking purchase orders, stock cover and open production orders…
 
 ## 🎯 Five questions, one answer
 
-<div align="center">
-  <img src="docs/images/questions.svg" alt="The five questions Sentinel answers: what is happening, what could go wrong, what is affected, what is the impact, what should I do" width="100%">
-</div>
+```mermaid
+flowchart TD
+    A["01 · What is happening?"] --> B["02 · What could go wrong?"]
+    B --> C["03 · What is affected?"]
+    C --> D["04 · What is the impact?"]
+    D --> E["05 · What should I do?"]
+
+    A -.- A1["Understand current operations"]
+    B -.- B1["Identify potential disruptions"]
+    C -.- C1["Assess affected resources"]
+    D -.- D1["Evaluate operational consequences"]
+    E -.- E1["Explore recommended actions"]
+
+    classDef question fill:#172B4D,color:#FFFFFF,stroke:#426A9A,stroke-width:2px
+    classDef detail fill:#F1F5F9,color:#334155,stroke:#CBD5E1
+    class A,B,C,D,E question
+    class A1,B1,C1,D1,E1 detail
+```
 
 <br>
 
