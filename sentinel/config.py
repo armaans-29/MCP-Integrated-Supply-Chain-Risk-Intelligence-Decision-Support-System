@@ -7,8 +7,21 @@ from dotenv import load_dotenv
 ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(ROOT / ".env")
 
+
 def env(key: str, default: str = "") -> str:
-    return (os.getenv(key) or default).strip()
+    value = os.getenv(key)
+
+    if value:
+        return value.strip()
+
+    try:
+        import streamlit as st
+        value = st.secrets.get(key, default)
+    except Exception:
+        value = default
+
+    return str(value or default).strip()
+
 
 DATABASE_URL = env("DATABASE_URL") or f"sqlite:///{ROOT / 'data' / 'sentinel.db'}"
 if DATABASE_URL.startswith("postgres://"):
