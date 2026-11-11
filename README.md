@@ -22,7 +22,7 @@
 |:---|:---|:---|
 | [The Pitch](#-the-pitch) | [Under the Hood](#-under-the-hood) | [The Problem](#-the-problem-in-one-noon) |
 | [Five Questions](#-five-questions-one-answer) | [Architecture](#-architecture) | [Five Questions](#-five-questions-one-answer) |
-| [Product Tour](#-product-tour) | [How an Investigation Runs](#-how-an-investigation-runs) | [Data & Live-ness](#-data--live-intelligence) |
+| [Product Tour](#-product-tour) | [How an Investigation Runs](#-how-an-investigation-runs) | [Data & Live-intelligence](#-data--live-intelligence) |
 | [Quick Start](#-quick-start) | [Tests](#-tests) | [Product Tour](#-product-tour) |
 
 
