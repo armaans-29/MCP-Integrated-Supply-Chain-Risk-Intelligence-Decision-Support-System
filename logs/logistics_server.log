@@ -1,0 +1,441 @@
+INFO:     Started server process [22628]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8104 (Press CTRL+C to quit)
+Created new transport with session ID: bbca9807eecf4ff5b98ba968c0970f7e
+INFO:     127.0.0.1:63873 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63874 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:63875 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63876 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Terminating session: bbca9807eecf4ff5b98ba968c0970f7e
+INFO:     127.0.0.1:63877 - "DELETE /mcp HTTP/1.1" 200 OK
+Error in standalone SSE writer
+Traceback (most recent call last):
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\streamable_http.py", line 765, in standalone_sse_writer
+    async for event_message in standalone_stream_reader:
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\abc\_streams.py", line 37, in __anext__
+    return await self.receive()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\streams\memory.py", line 141, in receive
+    raise ClosedResourceError from None
+anyio.ClosedResourceError
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22628]
+Traceback (most recent call last):
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\sentinel\servers\logistics_server.py", line 85, in <module>
+    mcp.run(transport="streamable-http")
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\fastmcp\server.py", line 316, in run
+    anyio.run(self.run_streamable_http_async)
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\_core\_eventloop.py", line 83, in run
+    return async_backend.run(func, args, {}, backend_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2621, in run
+    return runner.run(wrapper())
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+INFO:     Started server process [23084]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8104 (Press CTRL+C to quit)
+Created new transport with session ID: 2a594f6cdd8a4df094beff512c9a0c0d
+INFO:     127.0.0.1:57208 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57209 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:57210 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57211 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Terminating session: 2a594f6cdd8a4df094beff512c9a0c0d
+INFO:     127.0.0.1:57212 - "DELETE /mcp HTTP/1.1" 200 OK
+Error in standalone SSE writer
+Traceback (most recent call last):
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\streamable_http.py", line 765, in standalone_sse_writer
+    async for event_message in standalone_stream_reader:
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\abc\_streams.py", line 37, in __anext__
+    return await self.receive()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\streams\memory.py", line 141, in receive
+    raise ClosedResourceError from None
+anyio.ClosedResourceError
+Created new transport with session ID: d8b54a37fb27498b9ffefb11d973472c
+INFO:     127.0.0.1:51683 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51684 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:51685 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51686 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Terminating session: d8b54a37fb27498b9ffefb11d973472c
+INFO:     127.0.0.1:51687 - "DELETE /mcp HTTP/1.1" 200 OK
+Error in standalone SSE writer
+Traceback (most recent call last):
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\streamable_http.py", line 765, in standalone_sse_writer
+    async for event_message in standalone_stream_reader:
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\abc\_streams.py", line 37, in __anext__
+    return await self.receive()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\streams\memory.py", line 141, in receive
+    raise ClosedResourceError from None
+anyio.ClosedResourceError
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23084]
+Traceback (most recent call last):
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\sentinel\servers\logistics_server.py", line 85, in <module>
+    mcp.run(transport="streamable-http")
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\fastmcp\server.py", line 316, in run
+    anyio.run(self.run_streamable_http_async)
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\_core\_eventloop.py", line 83, in run
+    return async_backend.run(func, args, {}, backend_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2621, in run
+    return runner.run(wrapper())
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+INFO:     Started server process [2864]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8104 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2864]
+Traceback (most recent call last):
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\sentinel\servers\logistics_server.py", line 85, in <module>
+    mcp.run(transport="streamable-http")
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\fastmcp\server.py", line 316, in run
+    anyio.run(self.run_streamable_http_async)
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\_core\_eventloop.py", line 83, in run
+    return async_backend.run(func, args, {}, backend_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2621, in run
+    return runner.run(wrapper())
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+INFO:     Started server process [17116]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8104 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17116]
+Traceback (most recent call last):
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\sentinel\servers\logistics_server.py", line 85, in <module>
+    mcp.run(transport="streamable-http")
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\fastmcp\server.py", line 316, in run
+    anyio.run(self.run_streamable_http_async)
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\_core\_eventloop.py", line 83, in run
+    return async_backend.run(func, args, {}, backend_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2621, in run
+    return runner.run(wrapper())
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+INFO:     Started server process [7612]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8104 (Press CTRL+C to quit)
+Created new transport with session ID: c8530ff6125440b0ad71adef8694f2a7
+INFO:     127.0.0.1:62408 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62409 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:62410 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62411 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Terminating session: c8530ff6125440b0ad71adef8694f2a7
+INFO:     127.0.0.1:62412 - "DELETE /mcp HTTP/1.1" 200 OK
+Error in standalone SSE writer
+Traceback (most recent call last):
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\streamable_http.py", line 765, in standalone_sse_writer
+    async for event_message in standalone_stream_reader:
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\abc\_streams.py", line 37, in __anext__
+    return await self.receive()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\streams\memory.py", line 141, in receive
+    raise ClosedResourceError from None
+anyio.ClosedResourceError
+Created new transport with session ID: 62826a1ba81e4db794115bbd41d0e4c0
+INFO:     127.0.0.1:49810 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49811 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:49812 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49813 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Terminating session: 62826a1ba81e4db794115bbd41d0e4c0
+INFO:     127.0.0.1:49814 - "DELETE /mcp HTTP/1.1" 200 OK
+Error in standalone SSE writer
+Traceback (most recent call last):
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\streamable_http.py", line 765, in standalone_sse_writer
+    async for event_message in standalone_stream_reader:
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\abc\_streams.py", line 37, in __anext__
+    return await self.receive()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\streams\memory.py", line 141, in receive
+    raise ClosedResourceError from None
+anyio.ClosedResourceError
+Created new transport with session ID: 5f878c05f85d4448b5a8651ca1ff0c9f
+INFO:     127.0.0.1:49842 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49843 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:49844 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49845 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Terminating session: 5f878c05f85d4448b5a8651ca1ff0c9f
+INFO:     127.0.0.1:49846 - "DELETE /mcp HTTP/1.1" 200 OK
+Error in standalone SSE writer
+Traceback (most recent call last):
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\streamable_http.py", line 765, in standalone_sse_writer
+    async for event_message in standalone_stream_reader:
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\abc\_streams.py", line 37, in __anext__
+    return await self.receive()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\streams\memory.py", line 141, in receive
+    raise ClosedResourceError from None
+anyio.ClosedResourceError
+Created new transport with session ID: bea7c436f2c240b4b16ce2b5c3907118
+INFO:     127.0.0.1:49870 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49871 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:49872 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49873 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type CallToolRequest
+INFO:     127.0.0.1:49874 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Terminating session: bea7c436f2c240b4b16ce2b5c3907118
+INFO:     127.0.0.1:49875 - "DELETE /mcp HTTP/1.1" 200 OK
+Error in standalone SSE writer
+Traceback (most recent call last):
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\streamable_http.py", line 765, in standalone_sse_writer
+    async for event_message in standalone_stream_reader:
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\abc\_streams.py", line 37, in __anext__
+    return await self.receive()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\streams\memory.py", line 141, in receive
+    raise ClosedResourceError from None
+anyio.ClosedResourceError
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7612]
+Traceback (most recent call last):
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\sentinel\servers\logistics_server.py", line 85, in <module>
+    mcp.run(transport="streamable-http")
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\fastmcp\server.py", line 316, in run
+    anyio.run(self.run_streamable_http_async)
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\_core\_eventloop.py", line 83, in run
+    return async_backend.run(func, args, {}, backend_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2621, in run
+    return runner.run(wrapper())
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+INFO:     Started server process [11032]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8104 (Press CTRL+C to quit)
+Created new transport with session ID: ed49d9d5475341b8b3f9e816307564e0
+INFO:     127.0.0.1:50914 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50915 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:50916 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50917 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Terminating session: ed49d9d5475341b8b3f9e816307564e0
+INFO:     127.0.0.1:50918 - "DELETE /mcp HTTP/1.1" 200 OK
+Error in standalone SSE writer
+Traceback (most recent call last):
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\streamable_http.py", line 765, in standalone_sse_writer
+    async for event_message in standalone_stream_reader:
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\abc\_streams.py", line 37, in __anext__
+    return await self.receive()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\streams\memory.py", line 141, in receive
+    raise ClosedResourceError from None
+anyio.ClosedResourceError
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11032]
+Traceback (most recent call last):
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\sentinel\servers\logistics_server.py", line 85, in <module>
+    mcp.run(transport="streamable-http")
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\fastmcp\server.py", line 316, in run
+    anyio.run(self.run_streamable_http_async)
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\_core\_eventloop.py", line 83, in run
+    return async_backend.run(func, args, {}, backend_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2621, in run
+    return runner.run(wrapper())
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+INFO:     Started server process [7664]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8104 (Press CTRL+C to quit)
+Created new transport with session ID: 32a25b3beb8943978742019fe7dfbe66
+INFO:     127.0.0.1:65132 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65134 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:65135 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65136 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Terminating session: 32a25b3beb8943978742019fe7dfbe66
+INFO:     127.0.0.1:65137 - "DELETE /mcp HTTP/1.1" 200 OK
+Error in standalone SSE writer
+Traceback (most recent call last):
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\streamable_http.py", line 765, in standalone_sse_writer
+    async for event_message in standalone_stream_reader:
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\abc\_streams.py", line 37, in __anext__
+    return await self.receive()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\streams\memory.py", line 141, in receive
+    raise ClosedResourceError from None
+anyio.ClosedResourceError
+Created new transport with session ID: 1e11b1300a5541d0bd87d94c9e6f99ab
+INFO:     127.0.0.1:50093 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50094 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:50095 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50096 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Terminating session: 1e11b1300a5541d0bd87d94c9e6f99ab
+INFO:     127.0.0.1:50097 - "DELETE /mcp HTTP/1.1" 200 OK
+Error in standalone SSE writer
+Traceback (most recent call last):
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\streamable_http.py", line 765, in standalone_sse_writer
+    async for event_message in standalone_stream_reader:
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\abc\_streams.py", line 37, in __anext__
+    return await self.receive()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\streams\memory.py", line 141, in receive
+    raise ClosedResourceError from None
+anyio.ClosedResourceError
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7664]
+Traceback (most recent call last):
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\sentinel\servers\logistics_server.py", line 85, in <module>
+    mcp.run(transport="streamable-http")
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\mcp\server\fastmcp\server.py", line 316, in run
+    anyio.run(self.run_streamable_http_async)
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\_core\_eventloop.py", line 83, in run
+    return async_backend.run(func, args, {}, backend_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\Downloads\supplychain-sentinel\supplychain-sentinel\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2621, in run
+    return runner.run(wrapper())
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\arsit\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
